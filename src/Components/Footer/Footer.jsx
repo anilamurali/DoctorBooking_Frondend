@@ -1,8 +1,12 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container';
+import '../Footer/Footer.css'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <Container fluid className='footer'>
+      <p> © 20203 Copyright : DoctorBooking.com</p>
+    </Container>
   )
 }
 
