@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../Doctorcar/Doctorcard.css'
+import { Link } from 'react-router-dom';
 
 
 function Doctorcard({doctor}) {
@@ -22,8 +23,10 @@ function Doctorcard({doctor}) {
                   <Card.Text>
                     {doctor.phone}
                   </Card.Text>
-                
-                  <Button className='button' variant="primary">Appoiment</Button>
+                <Link to={`/view/${doctor.id}`}>
+                <Button className='button' variant="primary">Appoiment</Button>
+                </Link>
+                  
                 </Card.Body>
                 
               </Card>
