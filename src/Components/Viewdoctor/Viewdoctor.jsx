@@ -12,7 +12,7 @@ function Viewdoctor() {
     // console.log(id);
     // console.log(pathParameter.id);
     const fetchData = async ()=>{
-        const response = await axios.get(`http://localhost:3001/doctors/${id}`)
+        const response = await axios.get(`https://do-116d.onrender.com/doctors/${id}`)
         // console.log(response.data);
         setViewDoctor(response.data)
     }

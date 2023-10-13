@@ -13,7 +13,7 @@ function Main() {
     //state for holding api data
     const [Doctors,setDoctors]=useState([])
     const fetchData = async ()=>{
-        const response= await axios.get('http://localhost:3001/doctors')
+        const response= await axios.get('https://do-116d.onrender.com/doctors')
         console.log(response.data);
         setDoctors(response.data)
     }
